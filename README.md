@@ -3,23 +3,10 @@
 
 ---
 
-## 📌 Deskripsi
-
-Project ini adalah **Form Pendaftaran Calon Anggota HIMATIK** berbasis HTML, CSS, dan JavaScript murni (Vanilla JS) — tanpa framework, tanpa library eksternal. Dibuat sebagai tugas mata kuliah **Pemrograman Web** semester 1.
-
-Form ini mencakup hampir **seluruh elemen HTML Form** yang ada, mulai dari input teks biasa hingga tanda tangan digital menggunakan Canvas API.
-
----
-
-## 🚀 Demo
-
-Buka file `form_himatik.html` langsung di browser — tidak perlu server.
-
-```
-Klik kanan file → Open with → Browser (Chrome / Firefox / Edge)
-```
-
----
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+[![JS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/JS)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?style=flat&logo=github&logoColor=white)](https://pages.github.com/)
 
 ## 📁 Struktur File
 
