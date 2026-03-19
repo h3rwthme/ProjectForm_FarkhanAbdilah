@@ -1,5 +1,5 @@
 # 📋 Form Pendaftaran HIMATIK
-> Formulir Pendaftaran Anggota Baru — Himpunan Mahasiswa Teknologi Informasi & Komunikasi
+> Formulir Pendaftaran Anggota Baru — Himpunan Mahasiswa Teknologi Informatika & Komputer
 
 ---
 
