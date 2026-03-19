@@ -152,12 +152,11 @@ open form_himatik.html
 
 ## 👤 Author
 
-**[Nama Kamu]**  
-Mahasiswa Semester 1 — Prodi Teknik Informatika  
-NIM: 2024XXXXXX
-
-📧 email@contoh.com  
-🐙 [github.com/username](https://github.com/username)
+**Farkhan Abdilah**  
+Mahasiswa Semester 2 — Prodi Teknik Informatika  
+NIM: 2507411012
+📧 farkhanabdilah@gmail.com  
+🐙 [github.com/h3rwthme](https://github.com/h3rwthme)
 
 ---
 
