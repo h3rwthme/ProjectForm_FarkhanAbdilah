@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran HIMATIK - Dark Theme</title>
+    <style>
+        :root {
+            --bg-color: #d2d2d2;
+            --card-bg: #ffffff;
+            --input-bg: #c8c8cb;
+            --text-color: #090909;
+            --accent-color: #272580;
+            --border-color: #bbb8b8;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .header-logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header-logo img {
+            display: block;
+            margin: 0 auto 15px auto; 
+            width: 120px;
+            height: auto;
+        }
+
+        .container {
+            max-width: 850px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            margin: auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 { color: #272661; text-align: center; margin-bottom: 30px;
+        font-family: monospace; }
+
+        table { width: 100%; border-collapse: collapse; }
+        td { padding: 15px 10px; vertical-align: middle; border-bottom: 1px solid var(--border-color); }
+        
+        label { font-size: 14px; font-weight: 500; }
+        .required { color: #e74c3c; margin-left: 4px; }
+
+        input[type="text"], input[type="number"], input[type="email"], input[type="date"], select, textarea {
+            width: 100%;
+            background-color: var(--input-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 12px;
+            color: #0c0c0c;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        input::placeholder { color: #676666; }
+
+        .radio-group { display: flex; gap: 15px; }
+        .radio-item {
+            background: var(--input-bg);
+            border: 1px solid var(--border-color);
+            padding: 10px 20px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        canvas {
+            border: 1px solid var(--border-color);
+            background: #ffffff;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        .btn-submit {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover { opacity: 0.8; }
+
+        .svg-icon { display: block; margin: 0 auto 10px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header-logo">
+    <img src="src/Logo-Himatik.png" alt="Logo HIMATIK" width="100" height="100">
+</div>
+    
+    <h2>Formulir Pendaftaran HIMATIK</h2>
+
+    <form action="#">
+        <table>
+            <tr>
+                <td width="30%"><label>Nama Lengkap</label><span class="required">*</span></td>
+                <td><input type="text" placeholder="Nama sesuai KTP" required></td>
+            </tr>
+
+            <tr>
+                <td><label>NIM</label><span class="required">*</span></td>
+                <td>
+                    <input type="number" placeholder="Contoh: 2507411012" required>
+                    <div style="font-size: 11px; margin-top: 5px;">10 digit Nomor Induk Mahasiswa</div>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Tempat Lahir</label><span class="required">*</span></td>
+                <td><input type="text" placeholder="Kota kelahiran" required></td>
+            </tr>
+            <tr>
+                <td><label>Tanggal Lahir</label><span class="required">*</span></td>
+                <td><input type="date" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Jenis Kelamin</label><span class="required">*</span></td>
+                <td>
+                    <div class="radio-group">
+                        <label class="radio-item"><input type="radio" name="jk" value="L"> Laki-laki</label>
+                        <label class="radio-item"><input type="radio" name="jk" value="P"> Perempuan</label>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Agama</label></td>
+                <td>
+                    <select>
+                        <option value="">— Pilih Agama —</option>
+                        <option value="Islam">Islam</option>
+                        <option value="Kristen">Kristen</option>
+                        <option value="Katolik">Katolik</option>
+                        <option value="Hindu">Hindu</option>
+                        <option value="Budha">Budha</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Nomor HP</label><span class="required">*</span></td>
+                <td><input type="text" placeholder="08xx-xxxx-xxxx" required></td>
+            </tr>
+            <tr>
+                <td><label>Email</label><span class="required">*</span></td>
+                <td><input type="email" placeholder="nama@email.com" required></td>
+            </tr>
+
+            <tr>
+                <td><label>Instagram</label></td>
+                <td>
+                    <input type="text" placeholder="@username (tanpa @)">
+                    <div style="font-size: 11px; margin-top: 5px;">Opsional — akun media sosial aktif</div>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Alamat Lengkap</label></td>
+                <td><textarea rows="4" placeholder="Jl. Contoh No.1, Kelurahan, Kecamatan, Kota..."></textarea></td>
+            </tr>
+
+            <tr>
+                <td><label>Divisi Pilihan</label></td>
+                <td>
+                    <label><input type="checkbox"> Bendum</label><br>
+                    <label><input type="checkbox"> Kominfo</label><br>
+                    <label><input type="checkbox"> Sospol</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label>Tanda Tangan</label></td>
+                <td>
+                    <canvas id="signature" width="300" height="120"></canvas>
+                    <br>
+                    <button type="button" onclick="resetCanvas()" style="margin-top:5px; cursor:pointer;">Reset</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button type="submit" class="btn-submit">SUBMIT PENDAFTARAN</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<script>
+    // Canvas untuk Tanda Tangan
+    const canvas = document.getElementById('signature');
+    const ctx = canvas.getContext('2d');
+    let drawing = false;
+
+    canvas.addEventListener('mousedown', () => drawing = true);
+    canvas.addEventListener('mouseup', () => { drawing = false; ctx.beginPath(); });
+    canvas.addEventListener('mousemove', draw);
+
+    function draw(e) {
+        if (!drawing) return;
+        const rect = canvas.getBoundingClientRect();
+        ctx.lineWidth = 2;
+        ctx.lineCap = 'round';
+        ctx.strokeStyle = '#000';
+        ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
+        ctx.stroke();
+    }
+
+    function resetCanvas() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+</script>
+
+</body>
+</html>
